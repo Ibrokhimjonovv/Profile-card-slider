@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile card slider using HTML, CSS & JavaScript | Swiper.js</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="swiper mySwiper container">
+            <div class="swiper-wrapper content">
+                <div class="swiper-slide card">
+                    <div class="box1"></div>
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="./images/man 1.avif" alt="">
+                        </div>
+                        <div class="media-icons">
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="name-profession">
+                            <span class="name">Andrew James</span>
+                            <span class="profession">Graphic Designer</span>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="about">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto praesentium ea neque debitis ab rem accusantium quo facilis fugit sit.</p>
+                        </div>
+                        <div class="button b1">
+                            <button class="aboutMe">About Me</button>
+                            <button class="hireMe">Hire Me</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide card">
+                    <div class="box2"></div>
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="./images/woman 1.avif" alt="">
+                        </div>
+                        <div class="media-icons">
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="name-profession">
+                            <span class="name">Andrew James</span>
+                            <span class="profession">Graphic Designer</span>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="about">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto praesentium ea neque debitis ab rem accusantium quo facilis fugit sit.</p>
+                        </div>
+                        <div class="button b2">
+                            <button class="aboutMe">About Me</button>
+                            <button class="hireMe">Hire Me</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide card">
+                    <div class="box3"></div>
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="./images/woman3.jpg" alt="">
+                        </div>
+                        <div class="media-icons">
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="name-profession">
+                            <span class="name">Andrew James</span>
+                            <span class="profession">Graphic Designer</span>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="about">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto praesentium ea neque debitis ab rem accusantium quo facilis fugit sit.</p>
+                        </div>
+                        <div class="button b3">
+                            <button class="aboutMe">About Me</button>
+                            <button class="hireMe">Hire Me</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- initializing swiper slider -->
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            grabCursor: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+            },
+        slidesPerGroup: 1,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+            el: ".swiper-pagination", 
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        });
+    </script>
+</body>
+</html>
